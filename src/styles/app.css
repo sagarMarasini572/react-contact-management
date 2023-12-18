@@ -1,0 +1,20 @@
+.contact_adder {
+    background: #ccc;
+    padding: 1rem;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.contact {
+    background: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.contact_list {
+    background: #ccc;
+    padding: 1rem;
+    margin: 5px;
+    border-radius: 5px;
+}
