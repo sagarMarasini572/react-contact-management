@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Contact from "./components/Contact";
+import NavBar from "./components/Navbar";
 import ContactAdder from './components/ContactAdder';
 
 import "./styles/app.css";
@@ -19,6 +20,8 @@ const App = () => {
 
   return (
     <>
+    <NavBar/>
+
     <div className="contact_adder">
       <ContactAdder onContactAdded={addContactData}/>
     </div>

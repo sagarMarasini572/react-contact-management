@@ -16,14 +16,14 @@ const ContactAdder = (props) => {
     return (
     <>
     <div className="simpleAdder">
-      Contact Adder:
+      <h3>Contact Adder:</h3>
       <br/>
       <input type="text" value={name} placeholder="Contact name" onChange={(e) => setName(e.target.value)}></input>
       <input type="text" value={mobile} placeholder="Mobile" onChange={(e) => setMobile(e.target.value)}></input>
       <input type="location" value={location} placeholder="Location" onChange={(e) => setLocation(e.target.value)}></input>
       <br/>
       <br/>
-      <button onClick={onClickHandler}>Click me!</button>
+      <button onClick={onClickHandler}>Add Contact</button>
       </div>     
     </>
     
