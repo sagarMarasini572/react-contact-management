@@ -1,7 +1,9 @@
 const NavBar = () => {
-    return <>
-    <div className="nav__navbar">Contact Manager</div>
+  return (
+    <>
+      <div className="nav_bar">Contact Manager</div>
     </>
-}
+  );
+};
 
 export default NavBar;

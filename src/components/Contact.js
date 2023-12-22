@@ -1,5 +1,5 @@
 const Contact = (props) => {
-    return (
+  return (
     <>
       <div className="contact">
         {props.data.name}
@@ -8,7 +8,6 @@ const Contact = (props) => {
         <br />
         {props.data.location}
       </div>
-          
     </>
   );
 };
