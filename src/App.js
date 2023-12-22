@@ -16,7 +16,9 @@ const App = () => {
   setContact(allContacts);
   localStorage.setItem("contact",JSON.stringify(allContacts)) };
 
-  
+  const clearAllContact = () => {localStorage.clear(); 
+  setContact([]);
+  };
 
   return (
     <>
@@ -31,7 +33,7 @@ const App = () => {
 
         {contact.map((data,) => <Contact key = {data.id} data={data}></Contact>)}
        
-
+        <button onClick={clearAllContact} style={{background: "#cc0800"}}>Clear All Contacts</button>
       </div>
 
     </>
