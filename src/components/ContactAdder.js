@@ -8,7 +8,7 @@ const ContactAdder = (props) => {
 
 
     const onClickHandler = () => {
-      const contactData = {name, number:mobile, location,};
+      const contactData = {id: Math.randon(), name, number:mobile, location,};
       props.onContactAdded(contactData);
     }
 

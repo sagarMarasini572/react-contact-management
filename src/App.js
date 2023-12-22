@@ -7,14 +7,15 @@ import "./styles/app.css";
 
 const App = () => {
 
+  const getContact = JSON.parse(localStorage.getItem("contact"));
+
+  const [contact, setContact]  = useState(getContact? getContact : []);
+
+  const addContactData = (contactData) => {const allContacts = [contactData, ...contact];
+  setContact(allContacts);
+  localStorage.setItem("contact",JSON.stringify(allContacts)) };
+
   
-
-  const [contact, setContact]  = useState([]);
-
-  
-  ;
-
-  const addContactData = (contactData) => {setContact([...contact, contactData]);};
 
   return (
     <>
@@ -25,10 +26,8 @@ const App = () => {
       <div className="contact_list" >
         <h3>Contact List: </h3>
 
-        {contact.map(data => <Contact data={data}></Contact>)}
-        
-       <button>Save Data</button>
-       <button>Get Data</button>
+        {contact.map((data,) => <Contact key = {data.id} data={data}></Contact>)}
+       
 
       </div>
 
