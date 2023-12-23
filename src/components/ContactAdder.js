@@ -6,9 +6,15 @@ const ContactAdder = (props) => {
   const [location, setLocation] = useState("");
 
   const onFormSubmitHandler = (e) => {
+    // Prevent default from submit behavior
     e.preventDefault();
 
+    // Creating an object with data..
+    // id  will have unique value as Math.random will always return random decimals
+
     const contactData = { id: Math.random(), name, number: mobile, location };
+
+    // Validations
     if (name.length < 1 || mobile.length < 1 || location.length < 1) {
       alert("Please fill all the fields!");
     } else {
